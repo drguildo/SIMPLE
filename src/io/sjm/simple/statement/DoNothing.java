@@ -3,7 +3,7 @@ package io.sjm.simple.statement;
 import io.sjm.simple.Environment;
 import io.sjm.simple.Expr;
 
-public class DoNothing implements Expr, Statement {
+public class DoNothing implements Expr {
   @Override
   public boolean reducible() {
     return false;

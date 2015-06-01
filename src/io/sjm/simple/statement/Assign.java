@@ -5,7 +5,7 @@ import io.sjm.simple.Expr;
 import io.sjm.simple.Variable;
 import io.sjm.simple.type.Value;
 
-public class Assign implements Expr, Statement {
+public class Assign implements Expr {
   private Variable var;
   private Expr expr;
 
