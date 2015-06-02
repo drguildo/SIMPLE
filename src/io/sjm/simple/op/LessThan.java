@@ -34,6 +34,6 @@ public class LessThan<TL extends Expr, TR extends Expr> implements Expr {
 
   @Override
   public String toString() {
-    return String.format("«%s < %s»", left, right);
+    return String.format("%s < %s", left, right);
   }
 }
