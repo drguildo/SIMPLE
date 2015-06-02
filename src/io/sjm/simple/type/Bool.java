@@ -1,12 +1,18 @@
 package io.sjm.simple.type;
 
-public class Bool extends Value<Boolean> {
-  public Bool(Boolean value) {
-    super(value);
+import io.sjm.simple.Environment;
+import io.sjm.simple.Expr;
+
+public enum Bool implements Expr {
+  TRUE, FALSE;
+
+  @Override
+  public boolean reducible() {
+    return false;
   }
 
   @Override
-  public String toString() {
-    return value.toString();
+  public Expr reduce(Environment env) {
+    return Bool.values()[this.ordinal()];
   }
 }
