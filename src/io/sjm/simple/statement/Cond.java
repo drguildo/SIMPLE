@@ -25,7 +25,7 @@ public class Cond implements Expr {
     if (cond.reducible())
       return new Cond(cond.reduce(env), cons, alt);
 
-    if (cond.equals(Bool.TRUE))
+    if (((Bool) cond).val())
       return cons;
 
     return alt;

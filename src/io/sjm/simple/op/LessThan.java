@@ -27,8 +27,8 @@ public class LessThan<TL extends Expr, TR extends Expr> implements Expr {
       return new LessThan<>(left, right.reduce(env));
     else {
       if (((Num) left).val() < ((Num) right).val())
-        return Bool.TRUE;
-      return Bool.FALSE;
+        return new Bool(true);
+      return new Bool(false);
     }
   }
 
