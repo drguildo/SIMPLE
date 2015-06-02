@@ -33,6 +33,6 @@ public class Cond implements Expr {
 
   @Override
   public String toString() {
-    return String.format("%s ? %s : %s", cond, cons, alt);
+    return String.format("if (%s) { %s } else { %s }", cond, cons, alt);
   }
 }

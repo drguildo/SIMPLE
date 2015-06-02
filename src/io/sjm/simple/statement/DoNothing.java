@@ -16,6 +16,6 @@ public class DoNothing implements Expr {
 
   @Override
   public String toString() {
-    return "do-nothing";
+    return "do-nothing;";
   }
 }
