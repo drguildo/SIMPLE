@@ -31,6 +31,6 @@ public class Assign implements Expr {
 
   @Override
   public String toString() {
-    return String.format("«%s = %s»", var, expr);
+    return String.format("%s = %s", var, expr);
   }
 }
