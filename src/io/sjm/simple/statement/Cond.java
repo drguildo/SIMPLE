@@ -5,9 +5,7 @@ import io.sjm.simple.Expr;
 import io.sjm.simple.type.Bool;
 
 public class Cond implements Expr {
-  private Expr cond;
-  private Expr cons;
-  private Expr alt;
+  private Expr cond, cons, alt;
 
   public Cond(Expr condition, Expr consequence, Expr alternative) {
     this.cond = condition;
