@@ -1,7 +1,7 @@
-package io.sjm.simple.statement;
+package io.sjm.simple.smallstep.statement;
 
-import io.sjm.simple.Environment;
-import io.sjm.simple.Expr;
+import io.sjm.simple.smallstep.Environment;
+import io.sjm.simple.smallstep.Expr;
 
 public class Sequence implements Expr {
   private Expr first;

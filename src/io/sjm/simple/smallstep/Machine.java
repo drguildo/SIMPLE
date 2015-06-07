@@ -1,4 +1,4 @@
-package io.sjm.simple;
+package io.sjm.simple.smallstep;
 
 import io.sjm.stdlib.IO;
 

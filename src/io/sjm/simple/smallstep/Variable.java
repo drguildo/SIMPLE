@@ -1,4 +1,4 @@
-package io.sjm.simple;
+package io.sjm.simple.smallstep;
 
 public class Variable implements Expr {
   private String name;

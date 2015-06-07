@@ -1,6 +1,6 @@
-package io.sjm.simple;
+package io.sjm.simple.smallstep;
 
-import io.sjm.simple.type.Value;
+import io.sjm.simple.smallstep.type.Value;
 
 import java.util.HashMap;
 
