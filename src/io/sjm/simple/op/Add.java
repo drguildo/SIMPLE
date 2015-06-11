@@ -1,8 +1,8 @@
-package io.sjm.simple.smallstep.op;
+package io.sjm.simple.op;
 
-import io.sjm.simple.smallstep.Environment;
-import io.sjm.simple.smallstep.Expr;
-import io.sjm.simple.smallstep.type.Num;
+import io.sjm.simple.Environment;
+import io.sjm.simple.Expr;
+import io.sjm.simple.type.Num;
 
 public class Add<TL extends Expr, TR extends Expr> implements Expr {
   private TL left;

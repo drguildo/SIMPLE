@@ -1,8 +1,8 @@
-package io.sjm.simple.smallstep.statement;
+package io.sjm.simple.statement;
 
-import io.sjm.simple.smallstep.Environment;
-import io.sjm.simple.smallstep.Expr;
-import io.sjm.simple.smallstep.type.Bool;
+import io.sjm.simple.Environment;
+import io.sjm.simple.Expr;
+import io.sjm.simple.type.Bool;
 
 public class Cond implements Expr {
   private Expr cond, cons, alt;

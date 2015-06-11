@@ -1,7 +1,7 @@
-package io.sjm.simple.smallstep.type;
+package io.sjm.simple.type;
 
-import io.sjm.simple.smallstep.Environment;
-import io.sjm.simple.smallstep.Expr;
+import io.sjm.simple.Environment;
+import io.sjm.simple.Expr;
 
 public abstract class Value<T> implements Expr {
   protected T value;

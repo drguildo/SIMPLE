@@ -1,7 +1,7 @@
-package io.sjm.simple.smallstep.statement;
+package io.sjm.simple.statement;
 
-import io.sjm.simple.smallstep.Environment;
-import io.sjm.simple.smallstep.Expr;
+import io.sjm.simple.Environment;
+import io.sjm.simple.Expr;
 
 public class While implements Expr {
   private Expr cond;

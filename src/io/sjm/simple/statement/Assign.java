@@ -1,9 +1,9 @@
-package io.sjm.simple.smallstep.statement;
+package io.sjm.simple.statement;
 
-import io.sjm.simple.smallstep.Environment;
-import io.sjm.simple.smallstep.Expr;
-import io.sjm.simple.smallstep.Variable;
-import io.sjm.simple.smallstep.type.Value;
+import io.sjm.simple.Environment;
+import io.sjm.simple.Expr;
+import io.sjm.simple.Variable;
+import io.sjm.simple.type.Value;
 
 public class Assign implements Expr {
   private Variable var;

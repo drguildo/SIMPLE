@@ -1,4 +1,4 @@
-package io.sjm.simple.smallstep.type;
+package io.sjm.simple.type;
 
 public class Bool extends Value<Boolean> {
   public Bool(Boolean value) {

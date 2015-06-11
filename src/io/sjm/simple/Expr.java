@@ -1,4 +1,4 @@
-package io.sjm.simple.smallstep;
+package io.sjm.simple;
 
 public interface Expr {
   public boolean reducible();
