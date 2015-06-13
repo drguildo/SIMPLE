@@ -15,6 +15,11 @@ public class DoNothing implements Expr {
   }
 
   @Override
+  public DoNothing evaluate(Environment env) {
+    return this;
+  }
+
+  @Override
   public String toString() {
     return "do-nothing";
   }

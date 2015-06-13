@@ -30,6 +30,11 @@ public class Assign implements Expr {
   }
 
   @Override
+  public Expr evaluate(Environment env) {
+    return env.put(var.getName(), (Value<?>) expr.evaluate(env));
+  }
+
+  @Override
   public String toString() {
     return String.format("%s = %s", var, expr);
   }

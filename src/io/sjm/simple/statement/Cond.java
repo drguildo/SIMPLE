@@ -30,6 +30,14 @@ public class Cond implements Expr {
   }
 
   @Override
+  public Expr evaluate(Environment env) {
+    if (((Bool) cond).val())
+      return cons;
+
+    return alt;
+  }
+
+  @Override
   public String toString() {
     return String.format("if (%s) { %s } else { %s }", cond, cons, alt);
   }

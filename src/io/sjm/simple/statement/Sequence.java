@@ -26,6 +26,12 @@ public class Sequence implements Expr {
   }
 
   @Override
+  public Expr evaluate(Environment env) {
+    first.evaluate(env);
+    return second.evaluate(env);
+  }
+
+  @Override
   public String toString() {
     return String.format("%s; %s", first, second);
   }

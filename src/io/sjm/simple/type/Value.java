@@ -20,6 +20,11 @@ public abstract class Value<T> implements Expr {
     return this;
   }
 
+  @Override
+  public Expr evaluate(Environment env) {
+    return this;
+  }
+
   public T val() {
     return value;
   }

@@ -24,8 +24,18 @@ public class Add<TL extends Expr, TR extends Expr> implements Expr {
       return new Add<>(left.reduce(env), right);
     else if (right.reducible())
       return new Add<>(left, right.reduce(env));
-    else
-      return new Num(((Num) left).val() + ((Num) right).val());
+    else {
+      Num nl = (Num) left;
+      Num nr = (Num) right;
+      return new Num(nl.val() + nr.val());
+    }
+  }
+
+  @Override
+  public Num evaluate(Environment env) {
+    Num nl = (Num) left.evaluate(env);
+    Num nr = (Num) right.evaluate(env);
+    return new Num(nl.val() + nr.val());
   }
 
   @Override

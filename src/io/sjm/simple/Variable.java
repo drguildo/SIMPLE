@@ -18,6 +18,11 @@ public class Variable implements Expr {
   }
 
   @Override
+  public Expr evaluate(Environment env) {
+    return env.get(getName());
+  }
+
+  @Override
   public String toString() {
     return getName();
   }

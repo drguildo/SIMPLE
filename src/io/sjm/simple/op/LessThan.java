@@ -33,6 +33,13 @@ public class LessThan<TL extends Expr, TR extends Expr> implements Expr {
   }
 
   @Override
+  public Bool evaluate(Environment env) {
+    Num bl = (Num) left.evaluate(env);
+    Num br = (Num) right.evaluate(env);
+    return new Bool(bl.val() < br.val());
+  }
+
+  @Override
   public String toString() {
     return String.format("%s < %s", left, right);
   }
