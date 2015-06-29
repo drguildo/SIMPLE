@@ -1,13 +1,8 @@
 package io.sjm.simple.parser;
 
 import org.parboiled.BaseParser;
-import org.parboiled.Parboiled;
 import org.parboiled.Rule;
 import org.parboiled.annotations.BuildParseTree;
-import org.parboiled.parserunners.ReportingParseRunner;
-import org.parboiled.parserunners.TracingParseRunner;
-import org.parboiled.support.ParseTreeUtils;
-import org.parboiled.support.ParsingResult;
 
 @BuildParseTree
 public class Parser extends BaseParser<Object> {
